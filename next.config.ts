@@ -6,6 +6,15 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: __dirname,
   },
+  async redirects() {
+    return [
+      {
+        source: "/",
+        destination: "/case-studies/scheduling-time-grid",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
